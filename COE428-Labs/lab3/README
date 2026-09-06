@@ -1,0 +1,21 @@
+Comments:
+In this lab, the main goal was to analyze how well each sorting algorithm works by counting the number of comparisons, copies and swaps for an algorithm under different conditions.For this lab, everything in the lab went well. When executing ./insertionSort and mergeSort with custom arguments, ctrl+d was needed to call in the result. 
+
+Insertion Sort:
+For this sorting algorithm, the best case was when the values were already sorted. The time complexity for this case would be O(n). When typing in the best case: 1 2 3 4 5, it results in 4 comparisons, 0 swaps and 4 copies. The worst case was when the values were backward sorted. The time complexity for this case would be O(n²).  When typing in the worst case: 5 4 3 2 1, it results in 10 comparisons, 10 swaps, and 4 copies. The average case was when the values were partially sorted. The formulas for each case are given below: The time complexity for this case would also be O(n²).  When typing in an average case: 3 1 2 4 5, it results in 5 comparisons, 2 swaps, and 4 copies. A summary of the formulas used are given below:
+
+Best case:       O(n)  —        n comparisons      —      0 swaps/shifts       —    n-1 copies
+Average case: O(n²) —  n(n-1)/4 comparisons — n(n-1)/4 swaps/shifts  —   n-1 copies
+Worst case:     O(n²) —  n(n-1)/2 comparisons — n(n-1)/2 swaps/shifts  —   n-1 copies
+
+
+Merge Sort:
+For this sorting algorithm, the best case, worst case and average case all had the same time complexity as O(n log n). For example, when the best case for insertion sort is used in this sorting algorithm, 1 2 3 4 5 results in 7 comparisons 0 swaps and  24 copies. When typing in the worst case for insertion sort into mergeSort: 5 4 3 2 1 results in 5 comparisons, 0 swaps, and 24 copies. When typing in an average case from insertionSort: 3 1 2 4 5 results in  5 comparisons 0 swaps and  24 copies.A summary of the formulas used are given below:
+
+Best case: O(n log n)  —  n log 2n comparisons      —   0  swaps   —  2n log2 n copies
+Average case: O(n log n) —  n log2 n  comparisons — 0 swaps  —   2n log2 n copies
+Worst case:     O(n log n) — n log2 n   comparisons —  0 swaps— 2n log2 n copies
+
+
+In conclusion, I learned a lot about the algorithm for mergeSort, and how for each case, the time complexity is essentially the same for all cases, but for insertionSort, the time complexity is different in some cases.
+
